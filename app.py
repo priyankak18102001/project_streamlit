@@ -8,7 +8,6 @@ st.title("E-Challan Dashboard")
 # Load data safely
 file_path = os.path.join(os.path.dirname(__file__), "echallan_daily_data.csv")
 df = pd.read_csv(file_path)
-
 df["date"] = pd.to_datetime(df["date"])
 
 # ---- KPI Cards ----
